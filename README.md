@@ -26,6 +26,7 @@ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$ROS_WORKSPACE
 export ROS_MASTER_URI=http://IP:11311
 export ROS_IP=IP
 ```
+Cierra el terminal
 ```
 exit
 ```
