@@ -13,16 +13,17 @@ sudo apt-get update
 
 # Install Desktop-Full Install: (Recommended) 
 # ROS, rqt, rviz, robot-generic libraries, 2D/3D simulators, navigation and 2D/3D perception 
-sudo apt-get install ros-kinetic-desktop-full
+sudo apt-get install ros-kinetic-desktop-full -y
 
 # Initialize rosdep
 sudo rosdep init
 rosdep update
 
 # Environment setup
+echo "\n# ROS Kinetic Environment Var" >> ~/.bashrc
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Dependencies for building packages
-sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 
