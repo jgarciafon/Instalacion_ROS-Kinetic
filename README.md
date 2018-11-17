@@ -10,12 +10,14 @@ git clone https://github.com/jgarciafon/Instalacion_ROS-Kinetic.git
 ```
 cd Instalacion_ROS-Kinetic
 sudo sh install_ROS-Kinetic.sh
+exit
 ```
 # 2. Configurar el espacio de trabajo
-Cierra el terminal y abre uno nuevo.
 ```
 cd Instalacion_ROS-Kinetic
 sh install_and_configuring_ROS_environment.sh
+echo "export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/robotica_movil_ws/" >> ~/.bashrc
+exit
 ```
 # 3. Instalar el simulador STDR
 Cierra el terminal y abre uno nuevo.
