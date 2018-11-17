@@ -11,7 +11,7 @@ cd ~/robotica_movil_ws/src
 unzip stdr_simulator-indigo-devel.zip
 rm stdr_simulator-indigo-devel.zip
 cd ..
-sudo rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+sudo rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y
 catkin_make
 
 # Instalar el error de odometria
