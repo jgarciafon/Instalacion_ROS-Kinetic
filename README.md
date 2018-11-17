@@ -9,7 +9,7 @@ git clone https://github.com/jgarciafon/Instalacion_ROS-Kinetic.git
 # 1. Instalar ROS Kinetic
 ```
 cd Instalacion_ROS-Kinetic
-sudo sh install_ROS-Kinetic.sh
+sh install_ROS-Kinetic.sh
 exit
 ```
 # 2. Configurar el espacio de trabajo
