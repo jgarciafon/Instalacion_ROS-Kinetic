@@ -16,7 +16,12 @@ exit
 ```
 cd Instalacion_ROS-Kinetic
 sh install_and_configuring_ROS_environment.sh
-echo "export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/robotica_movil_ws/" >> ~/.bashrc
+echo "source ~/robotica_movil_ws/devel/setup.bash" >> ~/.bashrc
+echo "export ROS_WORKSPACE=~/robotica_movil_ws/" >> ~/.bashrc
+echo "export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$ROS_WORKSPACE" >> ~/.bashrc
+echo "export ROS_MASTER_URI=http://192.168.1.60:11311" >> ~/.bashrc
+echo "export ROS_IP=192.168.1.60" >> ~/.bashrc
+source ~/.bashrc
 exit
 ```
 # 3. Instalar el simulador STDR
