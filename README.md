@@ -7,6 +7,7 @@ cd ~
 git clone https://github.com/jgarciafon/Instalacion_ROS-Kinetic.git
 ```
 # 1. Instalar ROS Kinetic
+Se ejecuta un script que instala ROS Kinetic full Desktop para Ubuntu e instala los paquetes recomendados por la pagina de ROS y se han añadido el paquete para utilizar filtros bayesianos y otro para teleoperar el robot con el teclado. Tardará en ejecutarse aproximadamente 4:30 minutos 
 ```
 cd Instalacion_ROS-Kinetic
 sh install_ROS-Kinetic.sh
@@ -38,7 +39,7 @@ sh install_STDR.sh
 cd ~
 rm -rf Instalacion_ROS-Kinetic
 ```
-# 3.1 Lanzar el simulador
+## 3.1 Lanzar el simulador
 ```
 # Abrir el simulador con el mapa de eurobot19 sin ruido de odometria y carga un amigobot sin sonares
 roslaunch stdr_launchers eurobot19.launch
