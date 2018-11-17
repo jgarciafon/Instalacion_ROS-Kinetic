@@ -10,3 +10,7 @@ cd Instalacion_ROS-Kinetic
 ```
 sudo sh install_ROS-Kinetic.sh
 ```
+# 2. Configurar el espacio de trabajo
+```
+sh install_and_configuring_ROS_environment.sh
+```
