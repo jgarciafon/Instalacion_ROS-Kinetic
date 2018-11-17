@@ -7,6 +7,7 @@
 # Instalar el simulador
 cd ~/Instalacion_ROS-Kinetic
 mv stdr_simulator-indigo-devel.zip ~/robotica_movil_ws/src
+cd ~/robotica_movil_ws/src
 unzip stdr_simulator-indigo-devel.zip
 rm stdr_simulator-indigo-devel.zip
 cd ..
