@@ -11,12 +11,13 @@ cd ~/robotica_movil_ws/src
 unzip stdr_simulator-indigo-devel.zip
 rm stdr_simulator-indigo-devel.zip
 cd ..
-rospack profile
+sudo rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 catkin_make
 
 # Instalar el error de odometria
 cd ~/Instalacion_ROS-Kinetic
 mv aux_files.zip ~/robotica_movil_ws/src
+cd ~/robotica_movil_ws/src
 unzip aux_files.zip
 rm aux_files.zip
 cd ..
