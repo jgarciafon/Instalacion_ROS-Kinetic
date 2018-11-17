@@ -11,6 +11,14 @@ cd Instalacion_ROS-Kinetic
 sudo sh install_ROS-Kinetic.sh
 ```
 # 2. Configurar el espacio de trabajo
+Cierra el terminal y abre uno nuevo.
 ```
 sh install_and_configuring_ROS_environment.sh
+```
+# 3. Instalar el simulador STDR
+Cierra el terminal y abre uno nuevo.
+```
+sh install_STDR.sh
+sh install_eurobot_STDR.sh
+sh install_aux_files.sh
 ```
