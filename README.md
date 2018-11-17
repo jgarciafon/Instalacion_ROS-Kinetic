@@ -14,6 +14,7 @@ sh install_ROS-Kinetic.sh
 exit
 ```
 # 2. Configurar el espacio de trabajo
+Se ejcuta un script que crea un espacio de trabajo para usar ROS. Con el comando roscd te lleva a dicha ubicación
 ```
 cd Instalacion_ROS-Kinetic
 sh install_and_configuring_ROS_environment.sh
@@ -33,6 +34,7 @@ exit
 ```
 
 # 3. Instalar el simulador STDR mas el ruido de odometría
+Se ejecuta un script que instala el paquete del simulador 2D STDR (preconfigurado con un mapa de eurobot19 y el robot amigobot) y el paquete que añade ruido a la odometría.
 ```
 cd Instalacion_ROS-Kinetic
 sh install_STDR.sh
@@ -40,10 +42,12 @@ cd ~
 rm -rf Instalacion_ROS-Kinetic
 ```
 ## 3.1 Lanzar el simulador
+Ejecutar el simulador con el mapa de eurobot19 sin ruido de odometria y carga un amigobot sin sonares
 ```
-# Abrir el simulador con el mapa de eurobot19 sin ruido de odometria y carga un amigobot sin sonares
 roslaunch stdr_launchers eurobot19.launch
-# En el terminal pulsamos Ctrl+shift+t para abrir una pestaña y escribimos para teleoperar
+```
+En el terminal pulsamos Ctrl+shift+t para abrir una nueva pestaña y escribimos lo siguiente para teleoperar.
+```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/robot0/cmd_vel
 ```
 
