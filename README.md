@@ -23,7 +23,7 @@ source ~/.bashrc
 ```
 Ahora hay que mirar la ip del ordenador y ponerla en las sentencias de a continuacion donde aparece IP
 ```
-echo "export ROS_MASTER_URI=http://IP" >> ~/.bashrc
+echo "export ROS_MASTER_URI=http://IP:11311" >> ~/.bashrc
 echo "export ROS_IP=IP" >> ~/.bashrc
 source ~/.bashrc
 exit
@@ -33,6 +33,8 @@ exit
 ```
 cd Instalacion_ROS-Kinetic
 sh install_STDR.sh
+cd ~
+rm -rf Instalacion_ROS-Kinetic
 ```
 # 3.1 Lanzar el simulador
 ```
