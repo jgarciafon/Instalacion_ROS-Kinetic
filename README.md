@@ -31,7 +31,7 @@ Cierra el terminal
 exit
 ```
 
-# 3. Instalar el simulador STDR mas el ruido de odometria
+# 3. Instalar el simulador STDR mas el ruido de odometría
 ```
 cd Instalacion_ROS-Kinetic
 sh install_STDR.sh
