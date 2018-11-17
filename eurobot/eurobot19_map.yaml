@@ -1,6 +1,0 @@
-image: eurobot19_map.png
-resolution: 0.001
-origin: [0.0, 0.0, 0.0]
-occupied_thresh: 0.65
-free_thresh: 0.2
-negate: 0
