@@ -16,16 +16,17 @@ exit
 ```
 cd Instalacion_ROS-Kinetic
 sh install_and_configuring_ROS_environment.sh
-echo "source ~/robotica_movil_ws/devel/setup.bash" >> ~/.bashrc
-echo "export ROS_WORKSPACE=~/robotica_movil_ws/" >> ~/.bashrc
-echo "export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/robotica_movil_ws/" >> ~/.bashrc
-source ~/.bashrc
+pluma ~/.bashrc
 ```
-Ahora hay que mirar la ip del ordenador y ponerla en las sentencias de a continuacion donde aparece IP
+Copiar todo lo siguiente y pegar al final del .bashrc. NOTA: Cambia la IP a las ultimas sentencias
 ```
-echo "export ROS_MASTER_URI=http://IP:11311" >> ~/.bashrc
-echo "export ROS_IP=IP" >> ~/.bashrc
-source ~/.bashrc
+source ~/robotica_movil_ws/devel/setup.bash
+export ROS_WORKSPACE=~/robotica_movil_ws/
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$ROS_WORKSPACE
+export ROS_MASTER_URI=http://IP:11311
+export ROS_IP=IP
+```
+```
 exit
 ```
 
