@@ -19,6 +19,4 @@ sh install_and_configuring_ROS_environment.sh
 Cierra el terminal y abre uno nuevo.
 ```
 sh install_STDR.sh
-sh install_eurobot_STDR.sh
-sh install_aux_files.sh
 ```
