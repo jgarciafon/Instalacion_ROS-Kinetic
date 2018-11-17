@@ -1,5 +1,6 @@
 # ROS-Kinetic
-http://wiki.ros.org/kinetic/Installation/Ubuntu
+- http://wiki.ros.org/kinetic/Installation/Ubuntu
+- http://wiki.ros.org/stdr_simulator/Tutorials/Set%20up%20STDR%20Simulator
 # 0. Descargar archivos
 ```
 cd ~
