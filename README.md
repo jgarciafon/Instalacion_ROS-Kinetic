@@ -22,8 +22,8 @@ pluma ~/.bashrc
 ```
 Copiar todo lo siguiente y pegar al final del .bashrc. NOTA: Cambia la IP a las ultimas sentencias
 ```
-source ~/robotica_movil_ws/devel/setup.bash
-export ROS_WORKSPACE=~/robotica_movil_ws/
+source ~/eurobot_ws/devel/setup.bash
+export ROS_WORKSPACE=~/eurobot_ws/
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$ROS_WORKSPACE
 export ROS_MASTER_URI=http://IP:11311
 export ROS_IP=IP
