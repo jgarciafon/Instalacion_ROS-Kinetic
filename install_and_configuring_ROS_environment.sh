@@ -3,9 +3,9 @@
 ###########################################################################################
 #################### Installing and Configuring Your ROS Environment ######################
 ###########################################################################################
-mkdir -p ~/robotica_movil_ws/src
+mkdir -p ~/eurobot_ws/src
 
-cd ~/robotica_movil_ws/src/
+cd ~/eurobot_ws/src/
 catkin_init_workspace
-cd ~/robotica_movil_ws
+cd ~/eurobot_ws
 catkin_make
