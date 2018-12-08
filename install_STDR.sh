@@ -6,8 +6,8 @@
 
 # Instalar el simulador
 cd ~/Instalacion_ROS-Kinetic
-mv stdr_simulator-indigo-devel.zip ~/robotica_movil_ws/src
-cd ~/robotica_movil_ws/src
+mv stdr_simulator-indigo-devel.zip ~/eurobot_ws/src
+cd ~/eurobot_ws/src
 unzip stdr_simulator-indigo-devel.zip
 rm stdr_simulator-indigo-devel.zip
 cd ..
@@ -16,8 +16,8 @@ catkin_make
 
 # Instalar el error de odometria
 cd ~/Instalacion_ROS-Kinetic
-mv aux_files.zip ~/robotica_movil_ws/src
-cd ~/robotica_movil_ws/src
+mv aux_files.zip ~/eurobot_ws/src
+cd ~/eurobot_ws/src
 unzip aux_files.zip
 rm aux_files.zip
 cd ..
