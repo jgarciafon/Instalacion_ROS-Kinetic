@@ -25,8 +25,8 @@ Copiar todo lo siguiente y pegar al final del .bashrc. NOTA: Cambia la IP a las 
 source ~/eurobot_ws/devel/setup.bash
 export ROS_WORKSPACE=~/eurobot_ws/
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$ROS_WORKSPACE
-export ROS_MASTER_URI=http://IP:11311
-export ROS_IP=IP
+export ROS_MASTER_URI=http://$(ifconfig |grep -A 1 "enp0s3" |tail -1 |cut -d ":" -f 2| cut -d " " -f 1):11311
+export ROS_IP=$(ifconfig |grep -A 1 "enp0s3" |tail -1 |cut -d ":" -f 2| cut -d " " -f 1)
 ```
 Cierra el terminal
 ```
